@@ -212,7 +212,7 @@ class TimeBox:
 if __name__ == '__main__':
     from PIL import ImageFont
     t = TimeBox()
-    t.connect("11:75:58:73:C9:BC")
+    t.connect(config.timebox_mac)
     t.show_clock()
     t.set_time(datetime.datetime.now()-datetime.timedelta(hours=1))
     time.sleep(2)
@@ -237,5 +237,5 @@ if __name__ == '__main__':
                  ("!.,;@$*€#()'|é~&", "green"),
                  ], font=font)
     
-    t.show_clock(color=[0x00,0x00,0xFF])
+    t.show_clock(color=0x00FF00)
     t.close()
