@@ -24,12 +24,12 @@ logging_conf = {
     },
     'handlers': { 
         'default': { 
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'formatter': 'standard',
             'class': 'logging.StreamHandler',
         },
         'file': {
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'formatter': 'standard',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': 'debug.log',
@@ -41,7 +41,7 @@ logging_conf = {
         '': { 
             # 'handlers': ['default', 'file', 'mail'],
             'handlers': ['default', 'file'],
-            'level': 'DEBUG',
+            'level': 'WARNING',
             'propagate': True
         },
     } 
